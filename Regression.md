@@ -34,7 +34,7 @@ len <- length(x)
 denom <- (len*sum(x %**% 2)-(sum(x))^2)
 ```
 
-Calculate least squares estimates *a* and *b*. Some literature may refer to these as \beta<sub>i</sub>.
+Calculate least squares estimates *a* and *b*. Some literature may refer to these as $\beta$<sub>i</sub>.
 ```
 # value of a
 a <- (len %*% sum(x*y)-(sum(x) %*% sum(y)))/denom
