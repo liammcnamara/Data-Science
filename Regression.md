@@ -58,4 +58,4 @@ Plot the results:
 plot (x,y,col="green")
 lines(x,y_hat,type="l", col="black")
 ```
-[Result](https://i.imgur.com/is5V6JI.png?1)
+[url=https://imgur.com/is5V6JI][img]http://i.imgur.com/is5V6JI.png?1[/img][/url]
