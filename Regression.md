@@ -10,7 +10,7 @@ Within this data set are price histories for *Amazon* and *Facebook*, these can 
 AMZN <- read.csv("amzn.us.txt")
 FB <- read.csv("fb.us.txt")
 ```
-
+### Slicing data
 Let's consider the previous year's *(2017)* price history for *AMZN* and *FB*. The *which()* will determine the index in the matrix where trading begins for 2017.
 ```
 AMZN_idx_s <- which(AMZN$Date == "2017-01-03")
@@ -25,6 +25,9 @@ x <- AMZN$Close[AMZN_idx_s:AMZN_end]
 y <- FB$Close[FB_idx_s:FB_end]
 ```
 
+### Calculate Linear Regression
+
+#### Preparation Variables
 Let's setup a couple of variables that might be useful, *len* is the length of *x* and *denom* is a denominator that's going to be used.
 ```
 # Length of x
@@ -34,6 +37,7 @@ len <- length(x)
 denom <- (len*sum(x %**% 2)-(sum(x))^2)
 ```
 
+#### Calculate constants
 Calculate least squares estimates *a* and *b*. Some literature may refer to these as $\beta$<sub>i</sub>.
 ```
 # value of a
@@ -47,6 +51,8 @@ b <- (sum(y)-a*sum(x))/len
 # Yhat is simply aX + b
 y_hat <- a*as.vector(x) + b
 ```
+
+#### Plot Results
 ```
 plot (x,y,col="green")
 lines(x,y_hat,type="l", col="black")
