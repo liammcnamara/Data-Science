@@ -57,5 +57,6 @@ Plot the results:
 ```
 plot (x,y,col="green")
 lines(x,y_hat,type="l", col="black")
+
 ```
-[Result]: http://i.imgur.com/is5V6JI.png?1 "Result"
+![Result](http://i.imgur.com/is5V6JI.png?1 "Result")
