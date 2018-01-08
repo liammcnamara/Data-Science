@@ -3,7 +3,7 @@
 
 ### Import data
 
-The data used in this example is from US Stock market. The complete dataset can be obtained from (here)[https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs].
+The data used in this example is from US Stock market. The complete dataset can be obtained from [here](https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs).
 
 Within this data set are price histories for *Amazon* and *Facebook*, these can be imported into R using *read.csv()* function which will read in delimited files.
 ```
