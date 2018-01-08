@@ -46,14 +46,16 @@ a <- (len %*% sum(x*y)-(sum(x) %*% sum(y)))/denom
 # value of b
 b <- (sum(y)-a*sum(x))/len
 ```
-
+Compute y hat using simple regression model from values *a* and *b*
 ```
 # Yhat is simply aX + b
 y_hat <- a*as.vector(x) + b
 ```
 
 #### Plot Results
+Plot the results:
 ```
 plot (x,y,col="green")
 lines(x,y_hat,type="l", col="black")
 ```
+[Result](https://i.imgur.com/is5V6JI.png?1)
